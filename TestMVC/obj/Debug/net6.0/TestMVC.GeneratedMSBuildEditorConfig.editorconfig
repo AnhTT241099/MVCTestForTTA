@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\TestMVC\TestMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/TestMVC/TestMVC/Test/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestMVC/TestMVC/Test/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVzdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestMVC/TestMVC/Test/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVzdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestMVC/TestMVC/Test/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVzdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestMVC/TestMVC/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/TestMVC/TestMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
