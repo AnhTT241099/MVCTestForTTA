@@ -1,4 +1,4 @@
-﻿@model Core.Entities.Shift
+﻿@model Core.Entity.MedicineBill
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,23 +6,30 @@
 
 <h1>Edit</h1>
 
-<h4>Shift</h4>
+<h4>MedicineBill</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdShift" />
             <div class="form-group">
-                <label asp-for="ShiftName" class="control-label"></label>
-                <input asp-for="ShiftName" class="form-control" />
-                <span asp-validation-for="ShiftName" class="text-danger"></span>
+                <label class="control-label">Id bác sĩ</label>
+                <input asp-for="DoctorID" class="form-control" />
+                <span asp-validation-for="DoctorID" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Time" class="control-label"></label>
-                <input asp-for="Time" class="form-control" />
-                <span asp-validation-for="Time" class="text-danger"></span>
+            <div class="form-group form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" value="false" id="radio1" name="PayStatus" asp-for="PayStatus" />
+                    <label class="form-check-label" for="radio1">Chưa thanh toàn</label>
+                </label>
             </div>
+            <div class="form-group form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" value="true" id="radio2" name="PayStatus" asp-for="PayStatus" />
+                    <label class="form-check-label" for="radio2">Đã thanh toán</label>
+                </label>
+            </div>
+            <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

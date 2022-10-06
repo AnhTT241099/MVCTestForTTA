@@ -1,4 +1,4 @@
-﻿@model Core.Entities.Shift
+﻿@model Core.Entity.MedicineBill
 
 @{
     ViewData["Title"] = "Details";
@@ -7,24 +7,30 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Shift</h4>
+    <h4>MedicineBill</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShiftName)
+            Id bác sĩ
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShiftName)
+            @Html.DisplayFor(model => model.DoctorID)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Time)
+            Ngày tạo
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Time)
+            @Html.DisplayFor(model => model.DateCreate)
+        </dd>
+        <dt class = "col-sm-2">
+            Tình trạng thanh toán
+        </dt>
+        <dd class = "col-sm-10">
+            @(Model.PayStatus == false ? "Chưa thanh toán" : "Đã thanh toán")
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdShift">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
